@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		29B32F5F1D23706E00F1D9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B32F5E1D23706E00F1D9CB /* AppDelegate.swift */; };
-		29B32F611D23706E00F1D9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B32F601D23706E00F1D9CB /* ViewController.swift */; };
+		29B32F611D23706E00F1D9CB /* ToggleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B32F601D23706E00F1D9CB /* ToggleCollectionViewController.swift */; };
 		29B32F641D23706E00F1D9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B32F621D23706E00F1D9CB /* Main.storyboard */; };
 		29B32F661D23706E00F1D9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B32F651D23706E00F1D9CB /* Assets.xcassets */; };
 		29B32F691D23706E00F1D9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B32F671D23706E00F1D9CB /* LaunchScreen.storyboard */; };
 		29B32F741D23706E00F1D9CB /* ToggleCollectionSamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B32F731D23706E00F1D9CB /* ToggleCollectionSamplerTests.swift */; };
 		29B32F7F1D23706E00F1D9CB /* ToggleCollectionSamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B32F7E1D23706E00F1D9CB /* ToggleCollectionSamplerUITests.swift */; };
+		29B32F8E1D23714C00F1D9CB /* ToggleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B32F8D1D23714C00F1D9CB /* ToggleCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		29B32F5B1D23706E00F1D9CB /* ToggleCollectionSampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToggleCollectionSampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B32F5E1D23706E00F1D9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29B32F601D23706E00F1D9CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29B32F601D23706E00F1D9CB /* ToggleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleCollectionViewController.swift; sourceTree = "<group>"; };
 		29B32F631D23706E00F1D9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29B32F651D23706E00F1D9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29B32F681D23706E00F1D9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		29B32F7A1D23706E00F1D9CB /* ToggleCollectionSamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToggleCollectionSamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B32F7E1D23706E00F1D9CB /* ToggleCollectionSamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleCollectionSamplerUITests.swift; sourceTree = "<group>"; };
 		29B32F801D23706E00F1D9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29B32F8D1D23714C00F1D9CB /* ToggleCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				29B32F5E1D23706E00F1D9CB /* AppDelegate.swift */,
-				29B32F601D23706E00F1D9CB /* ViewController.swift */,
+				29B32F8D1D23714C00F1D9CB /* ToggleCollectionCell.swift */,
+				29B32F601D23706E00F1D9CB /* ToggleCollectionViewController.swift */,
 				29B32F621D23706E00F1D9CB /* Main.storyboard */,
 				29B32F651D23706E00F1D9CB /* Assets.xcassets */,
 				29B32F671D23706E00F1D9CB /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					29B32F5A1D23706E00F1D9CB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = T8SGT3SP8E;
 					};
 					29B32F6E1D23706E00F1D9CB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B32F611D23706E00F1D9CB /* ViewController.swift in Sources */,
+				29B32F611D23706E00F1D9CB /* ToggleCollectionViewController.swift in Sources */,
 				29B32F5F1D23706E00F1D9CB /* AppDelegate.swift in Sources */,
+				29B32F8E1D23714C00F1D9CB /* ToggleCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -389,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToggleCollectionSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongmings.ToggleCollectionSampler;
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.ToggleCollectionSampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToggleCollectionSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongmings.ToggleCollectionSampler;
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.ToggleCollectionSampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -425,7 +436,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ToggleCollectionSamplerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongmings.ToggleCollectionSamplerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = your.domainToggleCollectionSamplerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToggleCollectionSampler.app/ToggleCollectionSampler";
 			};
@@ -437,7 +448,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ToggleCollectionSamplerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongmings.ToggleCollectionSamplerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = your.domainToggleCollectionSamplerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToggleCollectionSampler.app/ToggleCollectionSampler";
 			};
@@ -448,7 +459,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = ToggleCollectionSamplerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongmings.ToggleCollectionSamplerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.ToggleCollectionSamplerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ToggleCollectionSampler;
 			};
@@ -459,7 +470,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = ToggleCollectionSamplerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongmings.ToggleCollectionSamplerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = your.domain.ToggleCollectionSamplerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ToggleCollectionSampler;
 			};
@@ -484,6 +495,7 @@
 				29B32F851D23706E00F1D9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29B32F861D23706E00F1D9CB /* Build configuration list for PBXNativeTarget "ToggleCollectionSamplerTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +504,7 @@
 				29B32F881D23706E00F1D9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29B32F891D23706E00F1D9CB /* Build configuration list for PBXNativeTarget "ToggleCollectionSamplerUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +513,7 @@
 				29B32F8B1D23706E00F1D9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
