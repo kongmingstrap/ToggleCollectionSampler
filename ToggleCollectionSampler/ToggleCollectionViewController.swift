@@ -64,7 +64,6 @@ class ToggleCollectionViewController: UIViewController {
         
         toggleButtonItem?.title = cellType.toggleButtonItemTitle
         
-        
         let bounds = UIScreen.mainScreen().bounds
         
         collectionView?.collectionViewLayout = cellType.layoutFromSuperviewRect(bounds)
@@ -73,13 +72,6 @@ class ToggleCollectionViewController: UIViewController {
             let item = Item(id: "\(id)", name: "name: " + "\(id)", description: "description: " + "\(id)")
             items.append(item)
         }
-        
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
     }
     
     // MARK: - UI Handler
